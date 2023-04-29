@@ -1,6 +1,6 @@
 source venv/bin/activate
 if [ -z $1 ]; then
-    echo 'Missing $1 (model name suffix)'
+    echo 'Missing $1 (model name)'
     deactivate
     return 1
 fi
