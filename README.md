@@ -13,3 +13,9 @@ source init.sh
 ```
 source create.sh <name>
 ```
+
+## Why "hank"?
+
+In honor of Hank "I Am The Bat" Venture.
+
+![Henry Allen "Hank" Venture](hank.png)
