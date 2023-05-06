@@ -1,6 +1,6 @@
 export default {
   async fetch(request, env, ctx) {
-    const url = 'https://api.openai.com/v1/chat/completions';
+    const url = 'https://api.openai.com/v1/completions';
     const model = 'curie:ft-personal:hank-v2-2023-05-06-22-55-16';
     const requestOptions = {
       'method': 'POST',
@@ -10,8 +10,8 @@ export default {
         'Authorization': `Bearer ${env.OPENAI_API_KEY}`,
       },
       'body': JSON.stringify({
+	'prompt': 'Please do not touch it. It is not a toy.',
         'model': model,
-        'messages': [{'role': 'user', 'content': 'Hello, world!'}],
       }),
     };
     const response = await fetch(url, requestOptions);
