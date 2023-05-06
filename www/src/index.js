@@ -2,6 +2,7 @@ export default {
   async fetch(request, env, ctx) {
     const url = 'https://api.openai.com/v1/completions';
     const model = 'curie:ft-personal:hank-v2-2023-05-06-22-55-16';
+    const stopSequence = 'KEEP CIRCULATING THE TAPES';
     const requestOptions = {
       'method': 'POST',
       'headers': {
@@ -10,7 +11,7 @@ export default {
         'Authorization': `Bearer ${env.OPENAI_API_KEY}`,
       },
       'body': JSON.stringify({
-	'prompt': 'Please do not touch it. It is not a toy.',
+	'prompt': `Please do not touch it. It is not a toy.${stopSequence}`,
         'model': model,
         'temperature': 0,
       }),

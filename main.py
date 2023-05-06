@@ -24,13 +24,14 @@ def model():
 def transform():
     data_files = glob('data/*.json')
     jsonl = []
+    stop_sequence = 'KEEP CIRCULATING THE TAPES'
     for data_file in data_files:
         with open(data_file, 'r') as f:
             data = load(f)
         for pair in data:
             prompt = pair[0]
             completion = pair[1]
-            jsonl.append({'prompt': prompt, 'completion': completion})
+            jsonl.append({'prompt': f'{prompt}{stop_sequence}', 'completion': completion})
         with jsonl_open('training.jsonl', 'w') as writer:
             writer.write_all(jsonl)
     # output = []
