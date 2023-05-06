@@ -1,0 +1,8 @@
+{
+  "name": "hank",
+  "version": "0.0.1",
+  "dependencies": {
+    "openai": "^3.2.1",
+    "wrangler": "^2.19.0"
+  }
+}
