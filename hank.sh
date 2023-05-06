@@ -5,6 +5,8 @@ function bootstrap {
 }
 
 function create {
+  source venv/bin/activate
+  python3 main.py
   source www/.dev.vars
   export OPENAI_API_KEY=$OPENAI_API_KEY
   HANK_VERSION=$(cat version.txt)
@@ -12,9 +14,10 @@ function create {
   echo $HANK_VERSION > version.txt
   SUFFIX="HANK_V$HANK_VERSION"
   sed -i "s/version = '.*'/version = '$HANK_VERSION'/" www/src/index.js
-  # openai api fine_tunes.create -t training.jsonl -m curie --suffix $SUFFIX
-  # git add version.txt www/src/index.js
-  # git commit -m "Bump to v$HANK_VERSION"
+  openai api fine_tunes.create -t training.jsonl -m curie --suffix $SUFFIX
+  git add version.txt www/src/index.js
+  git commit -m "Bump to v$HANK_VERSION"
+  deactivate
 }
 
 $1
