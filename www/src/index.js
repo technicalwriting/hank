@@ -10,7 +10,7 @@ export default {
         'Authorization': `Bearer ${env.OPENAI_API_KEY}`,
       },
       'body': JSON.stringify({
-        'model': 'gpt-3.5-turbo',
+        'model': model,
         'messages': [{'role': 'user', 'content': 'Hello, world!'}],
       }),
     };
