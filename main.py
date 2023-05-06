@@ -4,6 +4,9 @@ from json import load
 from sys import argv, exit
 from openai import Model
 
+def dump():
+    print('TODO')
+
 def model():
     with open('version.txt', 'r') as f:
         version = f.readlines()[0].replace('\n', '')

@@ -3,6 +3,10 @@ function export_key {
   export OPENAI_API_KEY=$OPENAI_API_KEY
 }
 
+function dump {
+  echo "TODO"
+}
+
 function bootstrap {
   python3 -m venv venv
   source venv/bin/activate
