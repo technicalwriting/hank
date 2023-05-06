@@ -12,6 +12,7 @@ export default {
       'body': JSON.stringify({
 	'prompt': 'Please do not touch it. It is not a toy.',
         'model': model,
+        'temperature': 0,
       }),
     };
     const response = await fetch(url, requestOptions);
