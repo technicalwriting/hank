@@ -15,6 +15,7 @@ function deploy {
   python3 main.py model
   if [ $? -ne 0 ]; then
     echo "Model script did not exit successfully"
+    return 1
   fi
   MODEL=$(cat model.txt)
   sed -i "s/model = '.*'/model = '$MODEL'/" www/src/index.js
