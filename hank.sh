@@ -15,6 +15,7 @@ function deploy {
   python3 main.py model
   if [ $? -ne 0 ]; then
     echo "Model script did not exit successfully"
+    deactivate
     return 1
   fi
   MODEL=$(cat model.txt)
