@@ -17,6 +17,8 @@ def model():
             model = m['id']
             continue
         exit(f'ERROR: Multiple models match {version}!')
+    if model is None:
+        exit('ERROR: No matching model found!')
     with open('model.txt', 'w') as f:
         f.write(model)
     exit(0)
