@@ -21,6 +21,9 @@ function deploy {
   git add www/src/index.js model.txt
   git commit -m "Bump model to $MODEL"
   deactivate
+  cd www
+  npx wrangler publish
+  cd ..
 }
 
 function create {
