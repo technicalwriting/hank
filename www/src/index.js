@@ -1,7 +1,7 @@
 export default {
   async fetch(request, env, ctx) {
     const url = 'https://api.openai.com/v1/chat/completions';
-    const model = '';
+    const model = 'curie:ft-personal:hank-v2-2023-05-06-22-55-16';
     const requestOptions = {
       'method': 'POST',
       'headers': {
