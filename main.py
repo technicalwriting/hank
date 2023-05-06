@@ -1,8 +1,19 @@
-import jsonlines
+from jsonlines import open as jsonl_open
 from glob import glob
+from json import load
 
 def main():
-    print('I am the bat.')
+    data_files = glob('data/*.json')
+    jsonl = []
+    for data_file in data_files:
+        with open(data_file, 'r') as f:
+            data = load(f)
+        for pair in data:
+            prompt = pair[0]
+            completion = pair[1]
+            jsonl.append({'prompt': prompt, 'completion': completion})
+        with jsonl_open('training.jsonl', 'w') as writer:
+            writer.write_all(jsonl)
     # output = []
     # for item in data:
     #     original = item['original']

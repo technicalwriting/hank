@@ -1,3 +1,24 @@
+function bootstrap {
+  python3 -m venv venv
+  source venv/bin/activate
+  python3 -m pip install -r requirements.txt
+}
+
+function create {
+  source www/.dev.vars
+  export OPENAI_API_KEY=$OPENAI_API_KEY
+  HANK_VERSION=$(cat version.txt)
+  ((HANK_VERSION++))
+  echo $HANK_VERSION > version.txt
+  SUFFIX="HANK_V$HANK_VERSION"
+  sed -i "s/version = '.*'/version = '$HANK_VERSION'/" www/src/index.js
+  # openai api fine_tunes.create -t training.jsonl -m curie --suffix $SUFFIX
+  # git add version.txt www/src/index.js
+  # git commit -m "Bump to v$HANK_VERSION"
+}
+
+$1
+
 # source venv/bin/activate
 # if [ -z $1 ]; then
 #     echo 'Missing $1 (model name)'
