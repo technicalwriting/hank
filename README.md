@@ -12,18 +12,6 @@ If anything goes wrong, then it's obviously my fault, not Google's, since
 I didn't seek out approval from Google to work on `hank`. If any of this might
 be a problem for you, then please do not contribute to this repository!
 
-## Setup
-
-```
-source init.sh
-```
-
-## Create a fine-tuned model
-
-```
-source create.sh <name>
-```
-
 ## Why "hank"?
 
 In honor of Hank "I Am The Bat" Venture.
