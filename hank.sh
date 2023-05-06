@@ -9,6 +9,20 @@ function bootstrap {
   python3 -m pip install -r requirements.txt
 }
 
+function deploy {
+  source venv/bin/activate
+  export_key
+  python3 main.py model
+  if [ $? -ne 0 ]; then
+    echo "Model script did not exit successfully"
+  fi
+  MODEL=$(cat model.txt)
+  sed -i "s/model = '.*'/model = '$MODEL'/" www/src/index.js
+  git add www/src/index.js model.txt
+  git commit -m "Bump model to $MODEL"
+  deactivate
+}
+
 function create {
   source venv/bin/activate
   python3 main.py transform
@@ -18,11 +32,8 @@ function create {
   echo $VERSION > version.txt
   SUFFIX="hank-v$VERSION"
   openai api fine_tunes.create -t training.jsonl -m curie --suffix $SUFFIX
-  python3 main.py model > model.txt
-  MODEL=$(cat model.txt)
-  sed -i "s/model = '.*'/model = '$MODEL'/" www/src/index.js
-  git add version.txt www/src/index.js model.txt
-  git commit -m "Bump to v$VERSION ($MODEL)"
+  git add version.txt www/src/index.js
+  git commit -m "Bump to v$VERSION"
   deactivate
 }
 

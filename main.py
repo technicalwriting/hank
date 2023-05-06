@@ -1,7 +1,7 @@
 from jsonlines import open as jsonl_open
 from glob import glob
 from json import load
-from sys import argv
+from sys import argv, exit
 from openai import Model
 
 def model():
@@ -9,10 +9,17 @@ def model():
         version = f.readlines()[0].replace('\n', '')
     version = f'hank-v{version}'
     response = Model.list()
+    model = None
     for m in response['data']:
         if version not in m['id']:
             continue
-        print(m['id'])
+        if model is None:
+            model = m['id']
+            continue
+        exit(f'ERROR: Multiple models match {version}!')
+    with open('model.txt', 'w') as f:
+        f.write(model)
+    exit(0)
 
 def transform():
     data_files = glob('data/*.json')
