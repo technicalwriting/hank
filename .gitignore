@@ -1,4 +1,4 @@
 venv
-key.txt
 .dev.vars
 node_modules
+training.jsonl

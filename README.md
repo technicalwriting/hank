@@ -28,4 +28,4 @@ source create.sh <name>
 
 In honor of Hank "I Am The Bat" Venture.
 
-![Henry Allen "Hank" Venture](hank.png)
+![Henry Allen "Hank" Venture](www/hank.png)
