@@ -1,3 +1,8 @@
+function export_key {
+  source www/.dev.vars
+  export OPENAI_API_KEY=$OPENAI_API_KEY
+}
+
 function bootstrap {
   python3 -m venv venv
   source venv/bin/activate
@@ -6,48 +11,19 @@ function bootstrap {
 
 function create {
   source venv/bin/activate
-  python3 main.py
-  source www/.dev.vars
-  export OPENAI_API_KEY=$OPENAI_API_KEY
-  HANK_VERSION=$(cat version.txt)
-  ((HANK_VERSION++))
-  echo $HANK_VERSION > version.txt
-  SUFFIX="HANK_V$HANK_VERSION"
-  sed -i "s/version = '.*'/version = '$HANK_VERSION'/" www/src/index.js
+  python3 main.py transform
+  export_key
+  VERSION=$(cat version.txt)
+  ((VERSION++))
+  echo $VERSION > version.txt
+  SUFFIX="hank-v$VERSION"
   openai api fine_tunes.create -t training.jsonl -m curie --suffix $SUFFIX
-  git add version.txt www/src/index.js
-  git commit -m "Bump to v$HANK_VERSION"
+  python3 main.py model > model.txt
+  MODEL=$(cat model.txt)
+  sed -i "s/model = '.*'/model = '$MODEL'/" www/src/index.js
+  git add version.txt www/src/index.js model.txt
+  git commit -m "Bump to v$VERSION ($MODEL)"
   deactivate
 }
 
 $1
-
-# source venv/bin/activate
-# if [ -z $1 ]; then
-#     echo 'Missing $1 (model name)'
-#     deactivate
-#     return 1
-# fi
-# export OPENAI_API_KEY=$(cat key.txt)
-# python3 transform.py
-# openai api fine_tunes.create -t training.jsonl -m ada --suffix $1
-# deactivate
-# source venv/bin/activate
-# if [ -z $1 ]; then
-#     echo 'Missing $1 (fine-tuning job ID)'
-#     deactivate
-#     return 1
-# fi
-# export OPENAI_API_KEY=$(cat key.txt)
-# openai api fine_tunes.follow -i $1
-# deactivate
-# python3 -m venv venv
-# source venv/bin/activate
-# python3 -m pip install jsonlines openai
-# read -p "Enter your OpenAI API key: " openai_api_key
-# echo $openai_api_key > key.txt
-# deactivate
-# source venv/bin/activate
-# export OPENAI_API_KEY=$(cat key.txt)
-# openai api fine_tunes.list
-# deactivate

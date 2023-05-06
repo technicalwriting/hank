@@ -1,8 +1,20 @@
 from jsonlines import open as jsonl_open
 from glob import glob
 from json import load
+from sys import argv
+from openai import Model
 
-def main():
+def model():
+    with open('version.txt', 'r') as f:
+        version = f.readlines()[0].replace('\n', '')
+    version = f'hank-v{version}'
+    response = Model.list()
+    for m in response['data']:
+        if version not in m['id']:
+            continue
+        print(m['id'])
+
+def transform():
     data_files = glob('data/*.json')
     jsonl = []
     for data_file in data_files:
@@ -25,4 +37,8 @@ def main():
     #         writer.write_all(output)
 
 if __name__ == '__main__':
-    main()
+    if argv[1] == 'model':
+        model()
+    if argv[1] == 'transform':
+        transform()
+    # main()

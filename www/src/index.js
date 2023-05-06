@@ -1,7 +1,7 @@
 export default {
   async fetch(request, env, ctx) {
     const url = 'https://api.openai.com/v1/chat/completions';
-    const version = '1';
+    const model = 'TODO';
     const requestOptions = {
       'method': 'POST',
       'headers': {
