@@ -1,6 +1,6 @@
 from jsonlines import open as jsonl_open
 from glob import glob
-from json import load
+from json import load, dump
 from sys import argv, exit
 from openai import Model
 
@@ -27,6 +27,8 @@ def model():
     exit(0)
 
 def transform():
+    test = ''
+    expected = ''
     try:
         data_files = glob('data/*.json')
         jsonl = []
@@ -34,7 +36,9 @@ def transform():
         for data_file in data_files:
             with open(data_file, 'r') as f:
                 data = load(f)
-            for pair in data:
+            test += data['test']
+            expected += data['expected']
+            for pair in data['training']:
                 prompt = pair[0]
                 completion = pair[1]
                 # Remember that the completion is supposed to start with a space!
@@ -42,6 +46,8 @@ def transform():
                 jsonl.append({'prompt': f'{prompt}{stop_sequence}', 'completion': f' {completion}'})
             with jsonl_open('training.jsonl', 'w') as writer:
                 writer.write_all(jsonl)
+        with open('www/src/data.json', 'w') as f:
+            dump({'test': test, 'expected': expected})
         exit(0)
     except Exception as e:
         print(e)

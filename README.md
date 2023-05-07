@@ -56,6 +56,8 @@ other than the style guide fix. Example:
 
 #### Data formats
 
+(Note to Writing Day contributors: I updated the data format around 12:45.)
+
 If you're comfortable with JSON, then this format is preferred:
 
 ```

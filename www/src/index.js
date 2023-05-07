@@ -1,12 +1,11 @@
-import {p, e} from './data.json';
+import {test, expected} from './data.json';
 
 export default {
   async fetch(request, env, ctx) {
     const url = 'https://api.openai.com/v1/completions';
     const model = 'curie:ft-personal:hank-v5-2023-05-07-03-53-02';
     const stopSequence = '( ͡° ͜ʖ ͡°)';
-    const prompt = p;
-    const expected = e;
+    const prompt = test;
     const promptWithStopSequence = `${prompt}${stopSequence}`;
     const requestOptions = {
       'method': 'POST',
