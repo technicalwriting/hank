@@ -69,11 +69,11 @@ If you're comfortable with JSON, then this format is preferred:
 
 If you're not comfortable with JSON, then a CSV file would be fine. Or a spreadsheet.
 
-#### Create text that it close to what you'd see in technical writing
+#### Create text that is close to what you'd see in technical writing
 
 The content of the writing doesn't have to strictly be about technical topics.
 The writing style just needs to be close to what you'd see in a technical document.
-Novel writing, for example, often has a very different style than techncical writing.
+Novel writing, for example, often has a very different style than technical writing.
 
 #### Create multi-sentence, multi-paragraph, or complete-document examples
 
@@ -89,8 +89,8 @@ Back button, you may be charged twice.
 (The first and last sentences have no problems. Only the middle sentence contains the violation.)
 
 If you're comfortable with Markdown and using newline characters to represent new paragraphs
-then it would be good to start training the LLM on examples like that because that is the
-long-term goal. For example:
+then it would be good to start training the LLM on examples like that because editing entire
+Markdown docs is the long-term goal. For example:
 
 ```
 # Hello, world!\n\nFirst paragraph.\n\n## How to make sushi\n\nSecond paragraph.
@@ -101,7 +101,11 @@ long-term goal. For example:
 If there are any exceptions to the rule, create some examples that demonstrate those
 exceptions, also. For example, suppose that you have a contractions rule. `It is` should
 be edited to `It's`. However, think about the phrase `tell it like it is`. You wouldn't
-edit this to `tell it like it's`!
+edit this to `tell it like it's`! You capture the GOTCHA by creating an example where
+the before and after are the same:
+
+* `Tell it like it is.` (Before)
+* `Tell it like it is.` (After)
 
 ## Why "hank"?
 
