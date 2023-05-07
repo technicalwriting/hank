@@ -1,15 +1,15 @@
 [
   [
-    "It is possible to fine-tune an LLM to enforce a style guide.",
-    "It's possible to fine-tune an LLM to enforce a style guide."
+    "It is possible to fine-tune an LLM to enforce a style guide. It might be difficult but it is possible. We will see!",
+    "It's possible to fine-tune an LLM to enforce a style guide. It might be difficult but it's possible. We'll see!"
   ],
   [
-    "It is raining men, hallelujah",
-    "It's raining men, hallelujah"
+    "It is raining men, hallelujah, it is raining men, amen\nI am gonna go out to run and let myself get\nAbsolutely soaking wet\nIt is raining men, hallelujah\nIt is raining men, every specimen\nTall, blonde, dark and lean\nRough and tough and strong and mean\n",
+    "It's raining men, hallelujah, it's raining men, amen\nI'm gonna go out to run and let myself get\nAbsolutely soaking wet\nIt's raining men, hallelujah\nIt's raining men, every specimen\nTall, blonde, dark and lean\nRough and tough and strong and mean\n"
   ],
   [
-    "I think it is Travis.",
-    "I think it's Travis."
+    "I think it is Travis.\n\nYes, it must be Travis.\n",
+    "I think it's Travis.\n\nYes, it must be Travis.\n"
   ],
   [
     "I can't believe it is not butter!",
