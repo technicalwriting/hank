@@ -25,8 +25,8 @@ def model():
     exit(0)
 
 def transform():
-    test = ''
-    expected = ''
+    test = []
+    expected = []
     cwd = getcwd()
     try:
         data_files = glob('data/*.json')
@@ -35,8 +35,8 @@ def transform():
         for data_file in data_files:
             with open(data_file, 'r') as f:
                 data = load(f)
-            test += data['test']
-            expected += data['expected']
+            test.append(data['test'])
+            expected.append(data['expected'])
             for pair in data['training']:
                 prompt = pair[0]
                 completion = pair[1]
@@ -46,7 +46,7 @@ def transform():
             with jsonl_open('training.jsonl', 'w') as writer:
                 writer.write_all(jsonl)
         with open(f'{cwd}/www/src/data.json', 'w') as f:
-            dump({'test': test, 'expected': expected}, f, indent=2)
+            dump({'test': ' '.join(test), 'expected': ' '.join(expected)}, f, indent=2)
         exit(0)
     except Exception as e:
         print(e)

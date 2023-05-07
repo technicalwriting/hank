@@ -1,4 +1,4 @@
 {
-  "test": "Prior to today I had never been to a Write The Docs conference.I do not think it is going to work.",
-  "expected": "Before today I had never been to a Write The Docs conference.I <b>don't</b> think <b>it's</b> going to work."
+  "test": "It's a common idea that a comma indicates a pause where a reader or speaker should take a breath, simply adding commas when you feel a break is needed is not a reliable way to make sure you're punctuating your sentences correctly.Prior to today I had never been to a Write The Docs conference.I do not think it is going to work.",
+  "expected": "It's a common idea that a comma indicates a pause where a reader or speaker should take a breath. Simply adding commas when you feel a break is needed is not a reliable way to make sure you're punctuating your sentences correctly.Before today I had never been to a Write The Docs conference.I <b>don't</b> think <b>it's</b> going to work."
 }
