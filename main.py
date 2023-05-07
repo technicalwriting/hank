@@ -3,9 +3,7 @@ from glob import glob
 from json import load, dump
 from sys import argv, exit
 from openai import Model
-
-def dump():
-    print('TODO')
+from os import getcwd
 
 def model():
     with open('version.txt', 'r') as f:
@@ -29,6 +27,7 @@ def model():
 def transform():
     test = ''
     expected = ''
+    cwd = getcwd()
     try:
         data_files = glob('data/*.json')
         jsonl = []
@@ -46,8 +45,8 @@ def transform():
                 jsonl.append({'prompt': f'{prompt}{stop_sequence}', 'completion': f' {completion}'})
             with jsonl_open('training.jsonl', 'w') as writer:
                 writer.write_all(jsonl)
-        with open('www/src/data.json', 'w') as f:
-            dump({'test': test, 'expected': expected})
+        with open(f'{cwd}/www/src/data.json', 'w') as f:
+            dump({'test': test, 'expected': expected}, f, indent=2)
         exit(0)
     except Exception as e:
         print(e)
