@@ -35,6 +35,11 @@ function deploy {
 function create {
   source venv/bin/activate
   python3 main.py transform
+  if [ $? -ne 0 ]; then
+    echo "Transform script did not exit successfully"
+    deactivate
+    return 1
+  fi
   export_key
   VERSION=$(cat version.txt)
   ((VERSION++))
