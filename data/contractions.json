@@ -8,8 +8,8 @@
     "It's raining men, hallelujah, it's raining men, amen\nI'm gonna go out to run and let myself get\nAbsolutely soaking wet\nIt's raining men, hallelujah\nIt's raining men, every specimen\nTall, blonde, dark and lean\nRough and tough and strong and mean\n"
   ],
   [
-    "I think it is Travis.\n\nYes, it must be Travis.\n",
-    "I think it's Travis.\n\nYes, it must be Travis.\n"
+    "I think it is Travis.\n\nYes, it must be Travis.\nI know it is Travis.",
+    "I think it's Travis.\n\nYes, it must be Travis.\nI know it's Travis."
   ],
   [
     "I cannot believe it is not butter! Surely, it is butter. There is no way that this is not butter. Who do you think you are kidding?",
@@ -24,31 +24,31 @@
     "I don't know what it is. What's in the box? When will I find out? The anticipation is killing me. Tell me now!"
   ],
   [
-    "It is never too late to learn.",
-    "It's never too late to learn."
+    "It is never too late to learn. You are going to learn how LLMs work. There is a lot to learn but you will figure it out.",
+    "It's never too late to learn. You're going to learn how LLMs work. There's a lot to learn but you'll figure it out."
   ],
   [
-    "I like it as it is.",
-    "I like it as it is."
+    "I like it as it is.\n\nHow is it?\n\nIt is how it is.\n\n",
+    "I like it as it is.\n\nHow is it?\n\nIt is how it is.\n\n"
   ],
   [
-    "Maybe it is going to rain?",
-    "Maybe it's going to rain?"
+    "Maybe it is going to rain?\nI do not know. Why don't you check the weather report?\n\n",
+    "Maybe it's going to rain?\nI don't know. Why don't you check the weather report?\n\n"
   ],
   [
-    "It is normal to feel that way.",
-    "It's normal to feel that way."
+    "It is normal to feel that way.\nDo not be worried.\n",
+    "It's normal to feel that way.\nDon't be worried.\n"
   ],
   [
-    "Do not press the Back button while the order is processing.",
-    "Don't press the Back button while the order is processing."
+    "Do not press the Back button while the order is processing. You will be charged twice. You cannot get a refund for a double charge. Do not call customer support to request a refund.",
+    "Don't press the Back button while the order is processing. You'll be charged twice. You can't get a refund for a double charge. Don't call customer support to request a refund."
   ],
   [
-    "Next, you are going to optimize the code.",
-    "Next, you're going to optimize the code."
+    "Next, you are going to optimize the code for performance. It is a complicated process.\n\n",
+    "Next, you're going to optimize the code for performance. It's a complicated process.\n\n"
   ],
   [
-    "He is getting married. It is a great day!",
-    "He's getting married."
+    "He is getting married. It is a great day! I cannot believe it.",
+    "He's getting married. It's a great day! I can't believe it."
   ]
 ]
