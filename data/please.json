@@ -50,5 +50,17 @@
   [
     "Call the getSubscriptions() method, please.",
     "Call the getSubscriptions() method."
+  ],
+  [
+    "Please disable the alarm.",
+    "Disable the alarm."
+  ]
+  [
+    "Whatever you do, please remember to feed the snakes.",
+    "Whatever you do, remember to feed the snakes."
+  ],
+  [
+    "Please don't say \"please\" in your documentation.",
+    "Don't say \"please\" in your documentation."
   ]
 ]
