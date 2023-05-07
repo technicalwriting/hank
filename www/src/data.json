@@ -1,4 +1,4 @@
 {
-  "test": "I do not think it is going to work.",
-  "expected": "I don't think it's going to work."
+  "test": "Prior to today I had never been to a Write The Docs conference.I do not think it is going to work.",
+  "expected": "Before today I had never been to a Write The Docs conference.I <b>don't</b> think <b>it's</b> going to work."
 }

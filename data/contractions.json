@@ -1,6 +1,6 @@
 {
   "test":     "I do not think it is going to work.",
-  "expected": "I don't think it's going to work.",
+  "expected": "I <b>don't</b> think <b>it's</b> going to work.",
   "training": [
     [
       "It is possible to fine-tune an LLM to enforce a style guide. It might be difficult but it is possible. We will see!",
