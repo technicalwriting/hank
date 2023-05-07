@@ -29,14 +29,16 @@ def model():
 def transform():
     data_files = glob('data/*.json')
     jsonl = []
-    stop_sequence = 'H@NKV3NTUR3'
+    stop_sequence = '( ͡° ͜ʖ ͡°)'
     for data_file in data_files:
         with open(data_file, 'r') as f:
             data = load(f)
         for pair in data:
             prompt = pair[0]
             completion = pair[1]
-            jsonl.append({'prompt': f'{prompt}{stop_sequence}', 'completion': completion})
+            # Remember that the completion is supposed to start with a space!
+            # https://platform.openai.com/docs/guides/fine-tuning/data-formatting
+            jsonl.append({'prompt': f'{prompt}{stop_sequence}', 'completion': f' {completion}'})
         with jsonl_open('training.jsonl', 'w') as writer:
             writer.write_all(jsonl)
 
