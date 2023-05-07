@@ -1,7 +1,7 @@
 export default {
   async fetch(request, env, ctx) {
     const url = 'https://api.openai.com/v1/completions';
-    const model = 'curie:ft-personal:hank-v2-2023-05-06-22-55-16';
+    const model = 'curie:ft-personal:hank-v3-2023-05-06-23-41-12';
     const stopSequence = 'KEEP CIRCULATING THE TAPES';
     const requestOptions = {
       'method': 'POST',
