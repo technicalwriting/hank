@@ -1,8 +1,10 @@
+const story = require('./story.txt');
+
 export default {
   async fetch(request, env, ctx) {
     const url = 'https://api.openai.com/v1/completions';
     const model = 'curie:ft-personal:hank-v3-2023-05-06-23-41-12';
-    const stopSequence = 'KEEP CIRCULATING THE TAPES';
+    const stopSequence = 'H@NKV3NTUR3';
     const requestOptions = {
       'method': 'POST',
       'headers': {
@@ -14,6 +16,7 @@ export default {
 	'prompt': `Please do not touch it. It is not a toy.${stopSequence}`,
         'model': model,
         'temperature': 0,
+        'stop': stopSequence,
       }),
     };
     const response = await fetch(url, requestOptions);
@@ -23,6 +26,7 @@ export default {
         'content-type': 'application/json',
       },
     };
-    return new Response(JSON.stringify(json), responseOptions);
+    // return new Response(JSON.stringify(json), responseOptions);
+    return new Response(story);
   },
 };

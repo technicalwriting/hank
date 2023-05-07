@@ -29,7 +29,7 @@ def model():
 def transform():
     data_files = glob('data/*.json')
     jsonl = []
-    stop_sequence = 'KEEP CIRCULATING THE TAPES'
+    stop_sequence = 'H@NKV3NTUR3'
     for data_file in data_files:
         with open(data_file, 'r') as f:
             data = load(f)
@@ -39,19 +39,9 @@ def transform():
             jsonl.append({'prompt': f'{prompt}{stop_sequence}', 'completion': completion})
         with jsonl_open('training.jsonl', 'w') as writer:
             writer.write_all(jsonl)
-    # output = []
-    # for item in data:
-    #     original = item['original']
-    #     edited = item['edited']
-    #     prompt = 'FIXME: {}@STOP!!'.format(original)
-    #     completion = ' {}'.format(edited)
-    #     output.append({'prompt': prompt, 'completion': completion})
-    #     with jsonlines.open('training.jsonl', 'w') as writer:
-    #         writer.write_all(output)
 
 if __name__ == '__main__':
     if argv[1] == 'model':
         model()
     if argv[1] == 'transform':
         transform()
-    # main()
