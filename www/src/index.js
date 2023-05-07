@@ -42,10 +42,10 @@ export default {
 	    <p>Model: ${model}</p>
 	    <h2>Original</h2>
 	    <p>${prompt}</p>
-	    <h2>Expected</h2>
-	    <p>${expected}</p>
 	    <h2>Actual</h2>
 	    <p>${completion}</p>
+	    <h2>Expected</h2>
+	    <p>${expected}</p>
 	    <h2>Debug</h2>
 	    <pre><code>${JSON.stringify(json, null, 2)}</code></pre>
 	  </body>
