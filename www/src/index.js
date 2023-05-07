@@ -46,6 +46,8 @@ export default {
 	    <p>${expected}</p>
 	    <h2>Actual</h2>
 	    <p>${completion}</p>
+	    <h2>Debug</h2>
+	    <pre><code>${JSON.stringify(json, null, 2)}</code></pre>
 	  </body>
 	</html>`;
     return new Response(html, responseOptions);
