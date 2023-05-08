@@ -1,0 +1,70 @@
+{
+  "test":     "Will Hank manoeuvre the British spelling out of this sentence?",
+  "expected": "Will Hank <b>maneuver</b> the British spelling out of this sentence?",
+  "training": [
+    [
+      "Prisms create rainbows, in the right conditions. Rainbows have seven distinct colours.",
+      "Prisms create rainbows, in the right conditions. Rainbows have seven distinct colors."
+    ],
+    [
+      "Many people have routines they do before work. Writers like to organise their thoughts before they start writing. An organised desk is a more pleasant place to work.",
+      "Many people have routines they do before work. Writers like to organize their thoughts before they start writing. An organized desk is a more pleasant place to work."
+    ],
+    [
+      "Jane had an emergency. She cancelled the meeting. The workers went home.",
+      "Jane had an emergency. She canceled the meeting. The workers went home."
+    ],
+    [
+      "Priyanka asked me for a favour. She needs a ride to work tomorrow. I can pick her up on my way there.",
+      "Priyanka asked me for a favor. She needs a ride to work tomorrow. I can pick her up on my way there."
+    ],
+    [
+      "I have two favourite colours: orange and blue. It's cruel to ask people to pick one favourite colour when there are so many beautiful colours.",
+      "I have two favorite colors: orange and blue. It's cruel to ask people to pick one favorite color when there are so many beautiful colors."
+    ],
+    [
+      "The mayor is an honourable person. They do what they say they will, and they do not lie. Honour is an important quality in an elected official.",
+      "The mayor is an honorable person. They do what they say they will, and they do not lie. Honor is an important quality in an elected official."
+    ],
+    [
+      "I took an aeroplane to get here. Aeroplanes are a fast way to get from place to place.",
+      "I took an airplane to get here. Airplanes are a fast way to get from place to place."
+    ],
+    [
+      "At the theatre, a programme is a list of what character each actor plays. The programme often includes a director's note. All the events happen in the city centre. The concert is at noon, and there's dancing until midnight.",
+      "At the theater, a program is a list of what character each actor plays. The program often incliudes a director's note. All the events happen in the city center. The concert is at noon, and there's dancing until midnight."
+    ],
+    [
+      "Scientists say that the sun is so dense that a spoonful weighs a tonne. The American band The Flaming Lips wrote a song called \"A Spoonful Weighs a Tonne\". That's a heavy spoonful.",
+      "Scientists say that the sun is so dense that a spoonful weighs a ton. The American band The Flaming Lips wrote a song called \"A Spoonful Weighs a Ton\". That's a heavy spoonful. "
+    ],
+    [
+      "Lemmings exhibit a unique behaviour. Lemmings follow a leader off a cliff. Scientists puzzle over this behaviour because it doesn't seem evolutionarily advantageous.",
+      "Lemmings exhibit a unique behavior. Lemmings follow a leader off a cliff. Scientists puzzle over this behavior because it doesn't seem evolutionarily advantageous."
+    ],
+    [
+      "Some people think cilantro tastes like soap. They don't enjoy the flavour of soap. They avoid putting cilantro on their tacos. The odour of cilantro does not change for people who think it tastes like soap. Cilantro has a pleasantly grassy odour.",
+      "Some people think cilantro tastes like soap. They don't enjoy the flavor of soap. They avoid putting cilantro on their tacos. The odor of cilantro does not change for people who think it tastes like soap. Cilantro has a pleasantly grassy odor."
+    ],
+    [
+      "He stepped off the kerb and a bicycle hit him. Look both ways before crossing the street! The kerb is the transition between the sidewalk and the road.",
+      "He stepped off the curb and a bicycle hit him. Look both ways before crossing the street! The curb is the transition between the sidewalk and the road."
+    ],
+    [
+      "The authorities handed out sleeping bags and a meagre amount of food to each person. It was barely enough for a person to survive. Individuals planted gardens to supplement the meagre rations.",
+      "The authorities handed out sleeping bags and a meager amount of food to each person. It was barely enough for a person to survive. Individuals planted gardens to supplement the meager rations."
+    ],
+    [
+      "If you get pulled over while driving drunk, you might get arrested and spend a night in gaol. The gaol is not a comfortable place to sleep. Don't drink and drive.",
+      "If you get pulled over while driving drunk, you might get arrested and spend a night in jail. The jail is not a comfortable place to sleep. Don't drink and drive."
+    ],
+    [
+      "Use the software to fulfil orders faster. It streamlines the process. Avoid typos in the form.",
+      "Use the software to fulfill orders faster. It streamlines the process. Avoid typos in the form."
+    ],
+    [
+      "Juan came out of the forest with his clothes dishevelled. He had twigs in his hair and one of his shoes was missing. He spoke honestly and without pretence. His words were heartfelt and genuine.",
+      "Juan came out of the forest with his clothes disheveled. He had twigs in his hair and one of his shoes was missing. He spoke honestly and without pretense. His words were heartfelt and genuine."
+    ]
+  ]
+} 
