@@ -44,7 +44,7 @@ def transform():
     try:
         data_files = glob('data/*.json')
         jsonl = []
-        stop_sequence = '\n\n\n\n( ͡° ͜ʖ ͡°)\n\n\n\n'
+        stop_sequence = '\n\n( ͡° ͜ʖ ͡°)\n\n'
         for data_file in data_files:
             print(data_file)
             with open(data_file, 'r') as f:
@@ -63,7 +63,7 @@ def transform():
         expected = ' '.join(expected)
         token_count = len(encoder.encode(test)) + 50
         with open(f'{cwd}/www/src/data.json', 'w') as f:
-            dump({'test': test, 'token_count': token_count, 'expected': expected}, f, indent=2)
+            dump({'test': test, 'token_count': token_count, 'expected': expected, 'stop_sequence': stop_sequence}, f, indent=2)
         exit(0)
     except Exception as e:
         print(e)
