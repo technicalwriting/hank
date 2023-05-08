@@ -9,7 +9,7 @@ function bootstrap {
   python3 -m pip install -r requirements.txt
 }
 
-function deploy {
+function www {
   source venv/bin/activate
   export_key
   python3 main.py model
