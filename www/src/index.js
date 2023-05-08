@@ -20,6 +20,8 @@ export default {
         'temperature': 0,
         'stop': stopSequence,
 	'max_tokens': token_count,
+	'presence_penalty': -2,
+	'frequency_penalty': -2,
       }),
     };
     const response = await fetch(url, requestOptions);
