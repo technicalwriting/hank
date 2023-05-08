@@ -4,6 +4,7 @@ from json import load, dump
 from sys import argv, exit
 from openai import Model
 from os import getcwd
+from tiktoken import get_encoding
 
 def model():
     with open('version.txt', 'r') as f:
@@ -25,6 +26,7 @@ def model():
     exit(0)
 
 def transform():
+    encoder = get_encoding('r50k_base')
     test = []
     expected = []
     cwd = getcwd()
@@ -46,8 +48,11 @@ def transform():
                 jsonl.append({'prompt': f'{prompt}{stop_sequence}', 'completion': f' {completion}'})
             with jsonl_open('training.jsonl', 'w') as writer:
                 writer.write_all(jsonl)
+        test = ' '.join(test)
+        expected = ' '.join(expected)
+        token_count = len(encoder.encode(test)) + 50
         with open(f'{cwd}/www/src/data.json', 'w') as f:
-            dump({'test': ' '.join(test), 'expected': ' '.join(expected)}, f, indent=2)
+            dump({'test': test, 'token_count': token_count, 'expected': expected}, f, indent=2)
         exit(0)
     except Exception as e:
         print(e)

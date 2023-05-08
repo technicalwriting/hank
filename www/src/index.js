@@ -1,4 +1,4 @@
-import {test, expected} from './data.json';
+import {test, expected, token_count} from './data.json';
 
 export default {
   async fetch(request, env, ctx) {
@@ -19,7 +19,7 @@ export default {
         'model': model,
         'temperature': 0,
         'stop': stopSequence,
-	'max_tokens': 2048,
+	'max_tokens': token_count,
       }),
     };
     const response = await fetch(url, requestOptions);
@@ -47,6 +47,7 @@ export default {
 	    <h2>Expected</h2>
 	    <p>${expected}</p>
 	    <h2>Debug</h2>
+	    <p>Token count: ${token_count}</p>
 	    <pre><code>${JSON.stringify(json, null, 2)}</code></pre>
 	  </body>
 	</html>`;
