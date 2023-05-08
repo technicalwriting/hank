@@ -6,6 +6,17 @@ from openai import Model
 from os import getcwd
 from tiktoken import get_encoding
 
+def tmp(filename):
+    with open('tmp.json', 'r') as f:
+        data = load(f)
+    out = {
+      'test': '',
+      'expected': '',
+      'training': data
+    }
+    with open(f'data/{filename}.json', 'w') as f:
+        dump(out, f, indent=2)
+
 def model():
     with open('version.txt', 'r') as f:
         version = f.readlines()[0].replace('\n', '')
@@ -63,3 +74,5 @@ if __name__ == '__main__':
         model()
     if argv[1] == 'transform':
         transform()
+    if argv[1] == 'tmp':
+        tmp(argv[2])
