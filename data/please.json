@@ -1,0 +1,30 @@
+{
+  "test": "Please set up a continuous integration (CI) pipeline to automate the build, testing, and deployment process for the project.",
+  "expected": "Set up a continuous integration (CI) pipeline to automate the build, testing, and deployment process for the project.",
+  "training": [
+    [
+      "Please sign up for an account. Your username can be your email address. Remember please to create a secure password. Don't share your password with anyone. Don't log in to your account on public computers, please.",
+      "Sign up for an account. Your username can be your email address. Remember to create a secure password. Don't share your password with anyone. Don't log in to your account on public computers."
+    ],
+    [
+      "Before committing your changes to the repository, please ensure that you have run all unit tests and integration tests. If you encounter any test failures, please investigate and fix the issues before pushing your code. Finally, please remember to update the documentation to reflect any changes you've made.",
+      "Before committing your changes to the repository, ensure that you have run all unit tests and integration tests. If you encounter any test failures, investigate and fix the issues before pushing your code. Finally, remember to update the documentation to reflect any changes you've made."
+    ],
+    [
+      "When implementing a new feature, please follow the established coding standards and practices for the project. If you're unsure about a particular coding style, please consult the project documentation or ask a senior team member for guidance. Additionally, please ensure that your code is well-documented and includes relevant comments.",
+      "When implementing a new feature, follow the established coding standards and practices for the project. If you're unsure about a particular coding style, consult the project documentation or ask a senior team member for guidance. Additionally, ensure that your code is well-documented and includes relevant comments."
+    ],
+    [
+      "Please review your code for potential security vulnerabilities before submitting a pull request. This includes checking for SQL injection, cross-site scripting, and proper input validation. Remember please to also verify that all user inputs are sanitized and that the application handles errors gracefully.",
+      "Review your code for potential security vulnerabilities before submitting a pull request. This includes checking for SQL injection, cross-site scripting, and proper input validation. Remember to also verify that all user inputs are sanitized and that the application handles errors gracefully."
+    ],
+    [
+      "When configuring the server, please allocate sufficient resources, such as memory and CPU, to ensure optimal performance. Additionally, please monitor the server logs regularly to identify any performance bottlenecks or potential issues. If necessary, please fine-tune the server settings according to the application requirements and best practices.",
+      "When configuring the server, allocate sufficient resources, such as memory and CPU, to ensure optimal performance. Additionally, monitor the server logs regularly to identify any performance bottlenecks or potential issues. If necessary, fine-tune the server settings according to the application requirements and best practices."
+    ],
+    [
+      "Before deploying a new release to production, please perform a thorough code review and conduct rigorous testing to identify and fix any bugs or issues. Additionally, please ensure that the release notes accurately document all new features, bug fixes, and any known issues. Finally, please coordinate with the operations team to schedule the deployment during a low-traffic period.",
+      "Before deploying a new release to production, perform a thorough code review and conduct rigorous testing to identify and fix any bugs or issues. Additionally, ensure that the release notes accurately document all new features, bug fixes, and any known issues. Finally, coordinate with the operations team to schedule the deployment during a low-traffic period."
+    ]
+  ]
+}
