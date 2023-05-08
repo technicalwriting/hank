@@ -1,0 +1,42 @@
+{
+  "test":     "Download the image(s) from the web.",
+  "expected": "Download the <b>image</b> from the web.",
+  "training": [
+    [
+      "Select the file(s) you wish to delete. Select 'Delete' from the context menu. Deleted files are sent to the Recycle Bin and are permanently removed after 30 days.",
+      "Select the file you wish to delete. Select 'Delete' from the context menu. Deleted files are sent to the Recycle Bin and are permanently removed after 30 days."
+    ],
+    [
+      "Inspect the part(s) for any defects. Use a gauge or measuring device to check the dimensions of the part(s). Record the measurements in the log book.",
+      "Inspect the part for any defects. Use a gauge or measuring device to check the dimensions of the part. Record the measurements in the log book."
+    ],
+    [
+      "Be careful when handling the product. Although it is flexible, putting the product under extreme stress(es) may cause it to snap.",
+      "Be careful when handling the product. Although it is flexible, putting the product under extreme stress may cause it to snap."
+    ],
+    [
+      "The pool is open to families every day of the week. Parents must accompany their child(ren) at all times. Any unsupervised child(ren) will be taken to the front desk by the lifeguard on duty.",
+      "The pool is open to families every day of the week. Parents must accompany their child at all times. Any unsupervised child will be taken to the front desk by the lifeguard on duty."
+    ],
+    [
+      "There will be charging stations available at the venue. You can use port(s) that are available. Don't use them all, though!",
+      "There will be charging stations available at the venue. You can use one or more ports that are available. Don't use them all, though!"
+    ],
+    [
+      "Servers work very hard. Every day they need to clean up mess(es) that customers leave on the tables or floors. They ought to be paid more.",
+      "Servers work very hard. Every day they need to clean up the messes that customers leave on the tables or floors. They ought to be paid more."
+    ],
+    [
+      "Customize your home screen by adding widget(s). To add a widget, touch and hold an empty area of your home screen until the icons jiggle. Tap the Add button and select your desired widget.",
+      "Customize your home screen by adding one or more widgets. To add a widget, touch and hold an empty area of your home screen until the icons jiggle. Tap the Add button and select your desired widget."
+    ],
+    [
+      "It's Bring Your Child(ren) to Work Day. This yearly event is a disruption in the office, but it's a lot of fun.",
+      "It's Bring Your Child to Work Day. This yearly event is a disruption in the office, but it's a lot of fun."
+    ],
+    [
+      "Writing Day is on Sunday. Join session(s) throughout the day and help out with a variety of projects! There are plenty to choose from.",
+      "Writing Day is on Sunday. Join one or more sessions throughout the day and help out with a variety of projects! There are plenty to choose from."
+    ]
+  ]
+} 
