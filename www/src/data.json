@@ -2,5 +2,5 @@
   "test": "Common fruits include apples, bananas and oranges. Please ensure that your code is properly formatted before submitting a pull request. Use an auto-formatter, such as Prettier, to help with this process. Additionally, please verify that your changes do not introduce any linting errors. I do not think it is going to work.",
   "token_count": 118,
   "expected": "Common fruits include apples, <b>bananas,</b> and oranges. Ensure that your code is properly formatted before submitting a pull request. Use an auto-formatter, such as Prettier, to help with this process. Additionally, verify that your changes do not introduce any linting errors. I <b>don't</b> think <b>it's</b> going to work.",
-  "stop_sequence": "\n\n( \u0361\u00b0 \u035c\u0296 \u0361\u00b0)\n\n"
+  "stop_sequence": "\n\n( \u0361\u00b0 \u035c\u0296 \u0361\u00b0)\n\n(\u261e \u0361\u00b0 \u035c\u0296 \u0361\u00b0)\u261e\n\n"
 }

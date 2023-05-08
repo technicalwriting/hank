@@ -62,7 +62,7 @@ function create {
   echo "*************************************************"
   echo "Remember to save the fine-tune job ID to job.txt!"
   echo "*************************************************"
-  openai api fine_tunes.create -t training.jsonl -m curie --suffix $SUFFIX
+  openai api fine_tunes.create -t training.jsonl -m davinci --suffix $SUFFIX
   git add version.txt www/src/index.js
   git commit -m "Bump to v$VERSION"
   deactivate
