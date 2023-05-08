@@ -3,7 +3,7 @@ import {test, expected, token_count, stop_sequence} from './data.json';
 export default {
   async fetch(request, env, ctx) {
     const url = 'https://api.openai.com/v1/completions';
-    const model = 'davinci:ft-personal:hank-v12-2023-05-08-13-49-19';
+    const model = 'davinci:ft-personal:hank-v13-2023-05-08-14-16-30';
     const stopSequence = stop_sequence;
     const prompt = test;
     const promptWithStopSequence = `${prompt}${stopSequence}`;
