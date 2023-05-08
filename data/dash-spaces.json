@@ -40,15 +40,35 @@
     ],
     [
       "En dashes also make complex compound adjectives clearer. Examples found via search include \"pro – United States\", \"Pulitzer Prize – winning journalist\", and \"crossing the New York – New Jersey border\".",
-      "En dashes also make complex compound adjectives clearer. Examples found via search include \"pro–United States\", \"Pulitzer Prize–winning journalist\", and \"crossing the New York–New Jersey border\".",
+      "En dashes also make complex compound adjectives clearer. Examples found via search include \"pro–United States\", \"Pulitzer Prize–winning journalist\", and \"crossing the New York–New Jersey border\"."
     ],
     [
       "I also want to capture when a space after an en dash is warranted — such as in \"the pre– and post– Cold War eras\", or \"pro– and anti– Oxford Comma camps\".",
-      "I also want to capture when a space after an en dash is warranted—such as in \"the pre– and post– Cold War eras\", or \"pro– and anti– Oxford Comma camps\".",
+      "I also want to capture when a space after an en dash is warranted—such as in \"the pre– and post– Cold War eras\", or \"pro– and anti– Oxford Comma camps\"."
     ],
     [
-      "In the above, I did not include spaces before the dash for \"pre\", \"post\", \"pro\", or \"anti\" — that approach struck me as easier for an automation rule.",
-      "In the above, I did not include spaces before the dash for \"pre\", \"post\", \"pro\", or \"anti\"—that approach struck me as easier for an automation rule."
+      "Napoli were the champions of the 2022-23 Serie A season. This is an extra sentence. And another one. And yet another one. These last few sentences are only here to expose the LLM to multi-sentence examples.",
+      "Napoli were the champions of the 2022–23 Serie A season. This is an extra sentence. And another one. And yet another one. These last few sentences are only here to expose the LLM to multi-sentence examples."
+    ],
+    [
+      "When the wind chill is -15 °F or lower, it can be dangerous to go outside. The wind chill today will range from –10–5 degrees Fahrenheit. Dew points of 30-50 degrees are generally comfortable.",
+      "When the wind chill is –15 °F or lower, it can be dangerous to go outside. The wind chill today will range from –10 to 5 degrees Fahrenheit. Dew points of 30–50 degrees are generally comfortable."
+    ],
+    [
+      "Whenever you interrupt your thought – like this – be sure to punctuate it properly.",
+      "Whenever you interrupt your thought—like this—be sure to punctuate it properly."
+    ],
+    [
+      "The app will add a timestamp to each file in the format 2023-05-07.",
+      "The app will add a timestamp to each file in the format 2023–05–07."
+    ],
+    [
+      "The 2023 Write The Docs conference runs from May 7-9. The conference hike is the day before, on May 6.",
+      "The 2023 Write The Docs conference runs from May 7–9. The conference hike is the day before, on May 6."
+    ],
+    [
+      "This grant proposal is for the period 2023-2027. Following the end of the period, in 2028, we'll write our final report. Construction on the new high school is well underway. The building will open for the 2023--2024 school year.",
+      "This grant proposal is for the period 2023–2027. Following the end of the period, in 2028, we'll write our final report. Construction on the new high school is well underway. The building will open for the 2023–2024 school year."
     ]
-  ]
+  ]  
 } 
