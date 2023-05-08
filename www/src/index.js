@@ -3,7 +3,7 @@ import {test, expected} from './data.json';
 export default {
   async fetch(request, env, ctx) {
     const url = 'https://api.openai.com/v1/completions';
-    const model = 'curie:ft-personal:hank-v7-2023-05-07-20-32-34';
+    const model = 'curie:ft-personal:hank-v9-2023-05-08-02-41-21';
     const stopSequence = '( ͡° ͜ʖ ͡°)';
     const prompt = test;
     const promptWithStopSequence = `${prompt}${stopSequence}`;
