@@ -39,6 +39,12 @@ function transform {
   deactivate
 }
 
+function status {
+  source venv/bin/activate
+  openai api fine_tunes.follow -i $(cat job.txt)
+  deactivate
+}
+
 function create {
   source venv/bin/activate
   export_key
