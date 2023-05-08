@@ -4,7 +4,7 @@ export default {
   async fetch(request, env, ctx) {
     const url = 'https://api.openai.com/v1/completions';
     const model = 'curie:ft-personal:hank-v9-2023-05-08-02-41-21';
-    const stopSequence = '( ͡° ͜ʖ ͡°)';
+    const stopSequence = '\n\n\n\n( ͡° ͜ʖ ͡°)\n\n\n\n';
     const prompt = test;
     const promptWithStopSequence = `${prompt}${stopSequence}`;
     const requestOptions = {

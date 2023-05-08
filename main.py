@@ -33,7 +33,7 @@ def transform():
     try:
         data_files = glob('data/*.json')
         jsonl = []
-        stop_sequence = '( ͡° ͜ʖ ͡°)'
+        stop_sequence = '\n\n\n\n( ͡° ͜ʖ ͡°)\n\n\n\n'
         for data_file in data_files:
             print(data_file)
             with open(data_file, 'r') as f:
