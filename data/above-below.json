@@ -1,0 +1,54 @@
+{
+  "test":     "The figure below explains the architecture of the Acme system.",
+  "expected": "The <b>following figure</b> explains the architecture of the Acme system.",
+  "training": [
+    [
+      "See the section above.",
+      "See the previous section."
+    ],
+    [
+      "See above",
+      "See previous"
+    ],
+    [
+      "This is the case, as mentioned above.",
+      "This is the case, as mentioned previously."
+    ],
+    [
+      "Enter your username in the field provided. Enter your password when prompted. If you don't remember your password, click the Resend Password link above the field.",
+      "Enter your username in the field provided. Enter your password when prompted. If you don't remember your password, click the Resend Password link preceding the field."
+    ],
+    [
+      "Page numbers are displayed above the header.",
+      "Page numbers are displayed before the header."
+    ],
+    [
+      "as shown in the example above",
+      "as shown in the previous example"
+    ],
+    [
+      "See the section below.",
+      "See the following section."
+    ],
+    [
+      "See below",
+      "See following"
+    ],
+    [
+      "This is the case, as in the example below.",
+      "This is the case, as in the following example."
+    ],
+    [
+      "Enter your username in the field provided. Enter your password when prompted. If you don't remember your password, click the Resend Password link below the field.",
+      "Enter your username in the field provided. Enter your password when prompted. If you don't remember your password, click the Resend Password link following the field."
+    ],
+    [
+      "Page numbers are displayed below the footer.",
+      "Page numbers are displayed after the footer."
+    ],
+    [
+      "as shown in the example below",
+      "as shown in the following example"
+    ]
+  ]
+} 
