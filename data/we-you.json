@@ -73,5 +73,6 @@
     [
       "First, we write the rules. Then we train the LLM. Finally, Hank does what we want. If we want to train the LLM, we need to teach it a lot of material. We need to make a list of things we want to see in Portland. We can have fun visiting the city. If we're baking a cake, we need to go to the grocery store first. We can buy the ingredients we need there. When we get to the grocery store, we decide whether we need a cart or a basket. If we have a lot to buy, we need a cart.",
       "First, you write the rules. Then you train the LLM. Finally, Hank does what you want. If you want to train the LLM, you need to teach it a lot of material. You need to make a list of things you want to see in Portland. You can have fun visiting the city. If you're baking a cake, you need to go to the grocery store first. You can buy the ingredients you need there. When you get to the grocery store, decide whether you need a cart or a basket. If you have a lot to buy, you need a cart."
+    ]
   ]
 } 

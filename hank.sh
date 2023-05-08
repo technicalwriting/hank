@@ -36,7 +36,6 @@ function transform {
     deactivate
     return 1
   fi
-  cat training.jsonl
   deactivate
 }
 

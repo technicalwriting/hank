@@ -33,6 +33,7 @@ def transform():
         jsonl = []
         stop_sequence = '( ͡° ͜ʖ ͡°)'
         for data_file in data_files:
+            print(data_file)
             with open(data_file, 'r') as f:
                 data = load(f)
             test.append(data['test'])
