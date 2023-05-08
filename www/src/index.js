@@ -20,7 +20,6 @@ export default {
         'temperature': 0,
         'stop': stopSequence,
 	'max_tokens': token_count,
-	'echo': true,
       }),
     };
     const response = await fetch(url, requestOptions);
