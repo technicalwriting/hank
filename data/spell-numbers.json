@@ -1,0 +1,46 @@
+{
+  "test":     "I have 2 words for you: LET'S PARTY! Or is that 3? Thanks to this new medical-grade energy drink, you can party 200% longer.",
+  "expected": "I have <b>two</b> words for you: LET'S PARTY! Or is that <b>three</b>? Thanks to this new medical-grade energy drink, you can party 200% longer.",
+  "training": [
+    [
+      "A recent study showed that website visitors will leave a site if it takes longer than 3 seconds to load. This study found that this is true for 60% of website visitors. Therefore, optimizing website loading speed is crucial for retaining website visitors.",
+      "A recent study showed that website visitors will leave a site if it takes longer than three seconds to load. This study found that this is true for 60% of website visitors. Therefore, optimizing website loading speed is crucial for retaining website visitors."
+    ],
+    [
+      "After implementing a new software update, there was a 25% increase in productivity among employees. This new software update improved employee efficiency by streamlining daily tasks. As a result, employees could accomplish more tasks in less time, ultimately increasing overall productivity.",
+      "After implementing a new software update, there was a 25% increase in productivity among employees. This new software update improved employee efficiency by streamlining daily tasks. As a result, employees could accomplish more tasks in less time, ultimately increasing overall productivity."
+    ],
+    [
+      "Laptop batteries have an average lifespan of approximately 3 years, with a total of 300 to 500 charge cycles. It is important to note that using your laptop while charging can reduce battery life. To prolong the lifespan of your laptop battery, it is recommended to let it drain completely before recharging it.",
+      "Laptop batteries have an average lifespan of approximately three years, with a total of 300 to 500 charge cycles. It is important to note that using your laptop while charging can reduce battery life. To prolong the lifespan of your laptop battery, it is recommended to let it drain completely before recharging it."
+    ],
+    [
+      "The project is expected to take 18 months to complete and will cost $1.5 million. This project's completion timeline and cost estimate are based on several factors, including materials, labor, and resources. The project team will continually monitor progress and adjust as needed to ensure successful completion within the timeline and budget.",
+      "The project is expected to take 18 months to complete and will cost $1.5 million. This project's completion timeline and cost estimate are based on several factors, including materials, labor, and resources. The project team will continually monitor progress and adjust as needed to ensure successful completion within the timeline and budget."
+    ],
+    [
+      "Our server can handle up to 1,000 concurrent connections without slowing down. This is possible due to the server's powerful hardware and optimized software. Additionally, regular maintenance and updates ensure that the server can continue to handle high volumes of traffic without interruption.",
+      "Our server can handle up to 1,000 concurrent connections without slowing down. This is possible due to the server's powerful hardware and optimized software. Additionally, regular maintenance and updates ensure that the server can continue to handle high volumes of traffic without interruption."
+    ],
+    [
+      "To avoid overheating and damage, the temperature of the CPU should not exceed 90 degrees Celsius. Excessive heat can cause the CPU to slow down, crash, or even permanently damage the hardware. Regular cleaning of dust and debris can help maintain optimal CPU temperature.",
+      "To avoid overheating and damage, the temperature of the CPU should not exceed 90 degrees Celsius. Excessive heat can cause the CPU to slow down, crash, or even permanently damage the hardware. Regular cleaning of dust and debris can help maintain optimal CPU temperature."
+    ],
+    [
+      "Our application has been downloaded over 1 million times, with an average rating of 4.7 stars. These impressive statistics demonstrate the popularity and effectiveness of our app. Regular updates and improvements ensure that our app continues to meet the needs of our users.",
+      "Our application has been downloaded over one million times, with an average rating of 4.7 stars. These impressive statistics demonstrate the popularity and effectiveness of our app. Regular updates and improvements ensure that our app continues to meet the needs of our users."
+    ],
+    [
+      "The recommended screen time for children ages 2 to 5 is 1 hour per day. Excessive screen time can lead to various health and developmental problems in children. It is important to limit screen time and encourage other forms of play and activity.",
+      "The recommended screen time for children ages two to five is one hour per day. Excessive screen time can lead to various health and developmental problems in children. It is important to limit screen time and encourage other forms of play and activity."
+    ],
+    [
+      "Our product is available in 6 colors: black, white, red, blue, green, and yellow. These color options provide users with a range of choices and preferences. Regular market research and analysis can help identify popular color trends and preferences.",
+      "Our product is available in six colors: black, white, red, blue, green, and yellow. These color options provide users with a range of choices and preferences. Regular market research and analysis can help identify popular color trends and preferences."
+    ],
+    [
+      "The product warranty covers defects and malfunctions for 3 years from the date of purchase. This warranty provides customers with protection and peace of mind. Regular quality control and testing ensure that our products meet the highest standards of performance and reliability.",
+      "The product warranty covers defects and malfunctions for three years from the date of purchase. This warranty provides customers with protection and peace of mind. Regular quality control and testing ensure that our products meet the highest standards of performance and reliability."
+    ]
+  ]
+} 
