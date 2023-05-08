@@ -2,57 +2,96 @@
   "test":     "I do not think it is going to work.",
   "expected": "I <b>don't</b> think <b>it's</b> going to work.",
   "training": [
-    [
-      "It is possible to fine-tune an LLM to enforce a style guide. It might be difficult but it is possible. We will see!",
-      "It's possible to fine-tune an LLM to enforce a style guide. It might be difficult but it's possible. We'll see!"
-    ],
-    [
-      "It is raining men, hallelujah, it is raining men, amen\nI am gonna go out to run and let myself get\nAbsolutely soaking wet\nIt is raining men, hallelujah\nIt is raining men, every specimen\nTall, blonde, dark and lean\nRough and tough and strong and mean\n",
-      "It's raining men, hallelujah, it's raining men, amen\nI'm gonna go out to run and let myself get\nAbsolutely soaking wet\nIt's raining men, hallelujah\nIt's raining men, every specimen\nTall, blonde, dark and lean\nRough and tough and strong and mean\n"
-    ],
-    [
-      "I think it is Travis.\n\nYes, it must be Travis.\nI know it is Travis.",
-      "I think it's Travis.\n\nYes, it must be Travis.\nI know it's Travis."
-    ],
-    [
-      "I cannot believe it is not butter! Surely, it is butter. There is no way that this is not butter. Who do you think you are kidding?",
-      "I can't believe it's not butter! Surely, it's butter. There is no way that this isn't butter. Who do you think you're kidding?"
-    ],
-    [
-      "The problem is that it is a complicated sentence. The sentence should be much more simple. It should not have so many words.",
-      "The problem is that it's a complicated sentence. The sentence should be much more simple. It shouldn't have so many words."
-    ],
-    [
-      "I do not know what it is. What is in the box? When will I find out? The anticipation is killing me. Tell me now!",
-      "I don't know what it is. What's in the box? When will I find out? The anticipation is killing me. Tell me now!"
-    ],
-    [
-      "It is never too late to learn. You are going to learn how LLMs work. There is a lot to learn but you will figure it out.",
-      "It's never too late to learn. You're going to learn how LLMs work. There's a lot to learn but you'll figure it out."
-    ],
-    [
-      "I like it as it is.\n\nHow is it?\n\nIt is how it is.\n\n",
-      "I like it as it is.\n\nHow is it?\n\nIt is how it is.\n\n"
-    ],
-    [
-      "Maybe it is going to rain?\nI do not know. Why don't you check the weather report?\n\n",
-      "Maybe it's going to rain?\nI don't know. Why don't you check the weather report?\n\n"
-    ],
-    [
-      "It is normal to feel that way.\nDo not be worried.\n",
-      "It's normal to feel that way.\nDon't be worried.\n"
-    ],
-    [
-      "Do not press the Back button while the order is processing. You will be charged twice. You cannot get a refund for a double charge. Do not call customer support to request a refund.",
-      "Don't press the Back button while the order is processing. You'll be charged twice. You can't get a refund for a double charge. Don't call customer support to request a refund."
-    ],
-    [
-      "Next, you are going to optimize the code for performance. It is a complicated process.\n\n",
-      "Next, you're going to optimize the code for performance. It's a complicated process.\n\n"
-    ],
-    [
-      "He is getting married. It is a great day! I cannot believe it.",
-      "He's getting married. It's a great day! I can't believe it."
-    ]
+
+  [
+    "Do not press the Back button while the order is processing. You may be charged twice. You will not be able to get a refund.",
+    "Don't press the Back button while the order is processing. You may be charged twice. You won't be able to get a refund."
+  ],
+  [
+
+
+
+"It is important to create regular backups of your data. If you do not, you might lose important information in the event of a system failure.",
+"It's important to create regular backups of your data. If you don't, you might lose important information in the event of a system failure."
+
+
+],
+[
+"You should not use the same password for multiple accounts. If one account is compromised, others will be at risk as well.",
+"You shouldn't use the same password for multiple accounts. If one account is compromised, others will be at risk as well."
+],
+[
+"It is recommended that you update your software regularly. This will ensure that you have the latest security patches and features.",
+"It's recommended that you update your software regularly. This will ensure that you have the latest security patches and features."
+],
+[
+"When developing an application, do not hard-code sensitive information, such as passwords or API keys. Instead, use secure methods for storing and retrieving this data.",
+"When developing an application, don't hard-code sensitive information, such as passwords or API keys. Instead, use secure methods for storing and retrieving this data."
+],
+[
+"If you are not familiar with a programming language or technology, do not be afraid to ask for help. There are many resources available to assist you.",
+"If you're not familiar with a programming language or technology, don't be afraid to ask for help. There are many resources available to assist you."
+],
+[
+"To ensure code quality, do not forget to write unit tests for your software. This will help catch bugs before they become larger issues.",
+"To ensure code quality, don't forget to write unit tests for your software. This will help catch bugs before they become larger issues."
+],
+[
+"It is crucial to optimize your website for mobile devices. Many users access the internet primarily through their smartphones.",
+"It's crucial to optimize your website for mobile devices. Many users access the internet primarily through their smartphones."
+],
+[
+"If your application is not working as expected, do not hesitate to consult the documentation or seek help from your peers.",
+"If your application isn't working as expected, don't hesitate to consult the documentation or seek help from your peers."
+],
+[
+"You should not ignore error messages or warnings during development. They can provide valuable insights into potential issues with your code.",
+"You shouldn't ignore error messages or warnings during development. They can provide valuable insights into potential issues with your code."
+],
+
+
+[
+"You should not use outdated software as it may have security vulnerabilities that can be exploited by hackers.",
+"You shouldn't use outdated software as it may have security vulnerabilities that can be exploited by hackers."
+],
+[
+"When debugging, do not rely solely on your intuition. Make use of debugging tools and techniques to pinpoint the issue.",
+"When debugging, don't rely solely on your intuition. Make use of debugging tools and techniques to pinpoint the issue."
+],
+[
+"It is essential to validate user input to prevent security risks, such as SQL injection attacks or cross-site scripting.",
+"It's essential to validate user input to prevent security risks, such as SQL injection attacks or cross-site scripting."
+],
+[
+"You do not have to be an expert in every programming language. Focus on mastering a few and learning the fundamentals of others.",
+"You don't have to be an expert in every programming language. Focus on mastering a few and learning the fundamentals of others."
+],
+[
+"It is important to follow best practices when it comes to code organization and structure. It will make your code easier to read and maintain.",
+"It's important to follow best practices when it comes to code organization and structure. It'll make your code easier to read and maintain."
+],
+[
+"You should not use global variables excessively. They can make the code harder to understand and maintain.",
+"You shouldn't use global variables excessively. They can make the code harder to understand and maintain."
+],
+[
+"Do not be afraid to refactor your code when necessary. It can improve readability, maintainability, and performance.",
+"Don't be afraid to refactor your code when necessary. It can improve readability, maintainability, and performance."
+],
+[
+"It is better to write clean and modular code than to focus solely on optimizing for performance.",
+"It's better to write clean and modular code than to focus solely on optimizing for performance."
+],
+[
+"You should not rely only on automated testing. Manual testing is also important to ensure the quality of your software.",
+"You shouldn't rely only on automated testing. Manual testing is also important to ensure the quality of your software."
+],
+[
+"It is crucial to keep up with new trends and technologies in software engineering to stay relevant in the field.",
+"It's crucial to keep up with new trends and technologies in software engineering to stay relevant in the field."
+]
+
+
+
   ]
 }
