@@ -1,0 +1,54 @@
+{
+  "test":     "From November – April it usually snows a lot.",
+  "expected": "From November–April it usually snows a lot.",
+  "training": [
+    [
+      "Hello — is this thing on? — how are you?",
+      "Hello—is this thing on<b>?—h</b>ow are you?"
+    ],
+    [
+      "Today is Sunday, March 7th — 2023. We're sitting at Table One — in the Show Bar.",
+      "Today is Sunday, March 7th—2023. We're sitting at Table One—in the Show Bar."
+    ],
+    [
+      "Looks like I'd originally used \"2003\" instead of \"2023\" above — lol.",
+      "Looks like I'd originally used \"2003\" instead of \"2023\" above—lol."
+    ],
+    [
+      "We're working on the Hank project. This rule — should you choose to accept it — will remove spaces before and after em dashes and en dashes.",
+      "We're working on the Hank project. This rule—should you choose to accept it—will remove spaces before and after em dashes and en dashes."
+    ],
+    [
+      "It's worth noting that AP Style — which many organizations use — does advise using spaces before and after em dashes. So your mileage may vary.",
+      "It's worth noting that AP Style—which many organizations use—does advise using spaces before and after em dashes. So your mileage may vary."
+    ],
+    [
+      "Generating twenty-five multi-sentence examples is surprisingly difficult — fortunately it sounds like a full twenty-five is unnecessary.",
+      "Generating twenty-five multi-sentence examples is surprisingly difficult—fortunately it sounds like a full twenty-five is unnecessary."
+    ],
+    [
+      "What's more difficult — at least for me — is coming up with examples that use en dashes. So the rows below — most of them, at least — benefitted from a quick Googling.",
+      "What's more difficult—at least for me—is coming up with examples that use en dashes. So the rows below—most of them, at least—benefitted from a quick Googling."
+    ],
+    [
+      "En dashes help express ranges in dates and numbers. Plant certain crops from August – October, others from October – December, January – March, or March – May.",
+      "En dashes help express ranges in dates and numbers. Plant certain crops from August–October, others from October–December, January–March, or March–May."
+    ],
+    [
+      "For our last assignment we read pages 1 – 30. For our current assignment we'll read pages 31 – 63, and for the next one we'll read pages 64 – 101.",
+      "For our last assignment we read pages 1–30. For our current assignment we'll read pages 31–63, and for the next one we'll read pages 64–101."
+    ],
+    [
+      "En dashes also make complex compound adjectives clearer. Examples found via search include \"pro – United States\", \"Pulitzer Prize – winning journalist\", and \"crossing the New York – New Jersey border\".",
+      "En dashes also make complex compound adjectives clearer. Examples found via search include \"pro–United States\", \"Pulitzer Prize–winning journalist\", and \"crossing the New York–New Jersey border\".",
+    ],
+    [
+      "I also want to capture when a space after an en dash is warranted — such as in \"the pre– and post– Cold War eras\", or \"pro– and anti– Oxford Comma camps\".",
+      "I also want to capture when a space after an en dash is warranted—such as in \"the pre– and post– Cold War eras\", or \"pro– and anti– Oxford Comma camps\".",
+    ],
+    [
+      "In the above, I did not include spaces before the dash for \"pre\", \"post\", \"pro\", or \"anti\" — that approach struck me as easier for an automation rule.",
+      "In the above, I did not include spaces before the dash for \"pre\", \"post\", \"pro\", or \"anti\"—that approach struck me as easier for an automation rule."
+    ]
+  ]
+} 
