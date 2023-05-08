@@ -3,10 +3,6 @@ function export_key {
   export OPENAI_API_KEY=$OPENAI_API_KEY
 }
 
-function dump {
-  echo "TODO"
-}
-
 function bootstrap {
   python3 -m venv venv
   source venv/bin/activate
@@ -32,7 +28,7 @@ function deploy {
   cd ..
 }
 
-function create {
+function transform {
   source venv/bin/activate
   python3 main.py transform
   if [ $? -ne 0 ]; then
@@ -40,6 +36,12 @@ function create {
     deactivate
     return 1
   fi
+  cat training.jsonl
+  deactivate
+}
+
+function create {
+  source venv/bin/activate
   export_key
   VERSION=$(cat version.txt)
   ((VERSION++))
