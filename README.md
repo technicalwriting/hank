@@ -115,3 +115,20 @@ the before and after are the same:
 In honor of Hank "I Am The Bat" Venture.
 
 ![Henry Allen "Hank" Venture](www/hank.png)
+
+## Contributors
+
+### Write The Docs Portland 2023 Writing Day
+
+In alphabetical order by first name:
+
+* Abby D
+* Danielle
+* Ed Cormany
+* Emily
+* Enoch Freeman
+* Eszter Julian
+* Jude
+* Katie Moody
+* Marcia Riefer Johnston
+* Miriam Z
