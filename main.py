@@ -6,6 +6,27 @@ from openai import Model
 from os import getcwd
 from tiktoken import get_encoding
 
+def data2():
+    jsonl = []
+    data_files = glob('data2/*')
+    for data_file in data_files:
+        start = data_file.index('/') + 1
+        end = len(data_file)
+        file_name = data_file[start:end]
+        start = 0
+        end = file_name.index('_')
+        doc_number = file_name[start:end]
+        start = file_name.index('.') + 1
+        end = len(file_name)
+        file_type = file_name[start:end]
+        with open(f'data2/{doc_number}_a.{file_type}', 'r') as f:
+            a = f.read()
+        with open(f'data2/{doc_number}_b.{file_type}', 'r') as f:
+            b = f.read()
+        jsonl.append({'prompt': a, 'completion': b})
+    print(jsonl)
+
+
 def tmp(filename):
     with open('tmp.json', 'r') as f:
         data = load(f)
@@ -76,3 +97,5 @@ if __name__ == '__main__':
         transform()
     if argv[1] == 'tmp':
         tmp(argv[2])
+    if argv[1] == 'data2':
+        data2()

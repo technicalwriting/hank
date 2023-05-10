@@ -3,6 +3,12 @@ function export_key {
   export OPENAI_API_KEY=$OPENAI_API_KEY
 }
 
+function data2 {
+  source venv/bin/activate
+  python3 main.py data2
+  deactivate
+}
+
 function tmp {
   read -p "Name: " name
   source venv/bin/activate
