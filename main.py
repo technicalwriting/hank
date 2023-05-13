@@ -12,7 +12,7 @@ def get_config():
     return config
 
 def transform():
-    out = []
+    training = []
     config = get_config()
     stop_sequence = config['stop_sequence']
     rules = config['rules']
@@ -21,21 +21,23 @@ def transform():
         data_paths = glob(f'{cwd}/training/{rule}/*')
         data_paths.sort(reverse=True)
         for index, data_path in enumerate(data_paths):
-            if index % 2 == 1:
+            if index % 2 == 0:
                 continue
-            before_path = data_path
-            with open(before_path, 'r') as f:
-                before = f.read()
-            after_path = data_paths[index + 1]
-            with open(after_path, 'r') as f:
-                after = f.read()
-            input = f'{before}{stop_sequence}'
+            input_path = data_path
+            print(input_path)
+            with open(input_path, 'r') as f:
+                input = f.read()
+            output_path = data_paths[index - 1]
+            print(output_path)
+            with open(output_path, 'r') as f:
+                output = f.read()
+            input = f'{input}{stop_sequence}'
             # OpenAI output should start with a space:
             # https://platform.openai.com/docs/guides/fine-tuning/data-formatting
-            output = f' {after}'
-            out.append({'prompt': input, 'completion': output})
+            output = f' {output}'
+            training.append({'prompt': input, 'completion': output})
     with jsonl_open(f'{cwd}/training.jsonl', 'w') as jsonl_writer:
-        jsonl_writer.write_all(out)
+        jsonl_writer.write_all(training)
 
 if __name__ == '__main__':
     try:
