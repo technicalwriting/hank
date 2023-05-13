@@ -2,13 +2,15 @@
 
 Experimental code that attempts to fine-tune an LLM into a style guide editor.
 
-See `//LOGS.md` for logs of experiments.
+See `//LOGS.md` for details about how the project is progressing.
 
 Note: `//` means the root directory of this repository.
 
 ## Goals
 
 The main goal is to speed up the process of editing text to follow a style guide.
+
+The following H3 sections outline some sub-goals.
 
 ### Full-document editing
 
@@ -26,9 +28,9 @@ to a web service API and get back the edited document in the response.
 I should be able to pick-and-choose which style guide rules the fine-tuned LLM
 is trained on.
 
-### AI service provider customizatoin
+### Model customization
 
-I should be able to use Hank with OpenAI, Google, etc.
+I should be able to fine-tune LLMs from OpenAI, Google, etc.
 
 ## Licenses
 
