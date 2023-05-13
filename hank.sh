@@ -10,3 +10,5 @@ function transform {
   python3 main.py transform
   deactivate
 }
+
+$1
