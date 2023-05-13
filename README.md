@@ -34,7 +34,7 @@ I should be able to fine-tune LLMs from OpenAI, Google, etc.
 
 ## Licenses
 
-Here are the licenses for the technical documents that were used as training data.
+Licenses for the technical documents that were used as training data.
 
 ### developer.chrome.com
 
