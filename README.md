@@ -1,8 +1,38 @@
 # hank
 
+Experimental code that attempts to fine-tune an LLM into a style guide editor.
+
+See `//LOGS.md` for logs of experiments.
+
+Note: `//` means the root directory of this repository.
+
+## Goals
+
+The main goal is to speed up the process of editing text to follow a style guide.
+
+### Full-document editing
+
+Ideally, I should be able to send a full document to the LLM and get back the
+exact same document, edited for the style guide rules.
+
+### GUI and API
+
+I should be able to copy-paste the full document into some kind of GUI and
+get back the edited document. I should also be able to `POST` the full document
+to a web service API and get back the edited document in the response.
+
+### Style guide rules customization
+
+I should be able to pick-and-choose which style guide rules the fine-tuned LLM
+is trained on.
+
+### AI service provider customizatoin
+
+I should be able to use Hank with OpenAI, Google, etc.
+
 ## Licenses
 
-Note: `//` indicates the root directory of this repository.
+Here are the licenses for the technical documents that were used as training data.
 
 ### developer.chrome.com
 
