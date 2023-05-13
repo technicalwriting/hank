@@ -2,6 +2,7 @@ from glob import glob
 from json import load
 from os import getcwd
 from jsonlines import open as jsonl_open
+from sys import argv, exit
 
 def get_config():
     cwd = getcwd()
@@ -37,4 +38,10 @@ def transform():
         jsonl_writer.write_all(out)
 
 if __name__ == '__main__':
-    transform()
+    try:
+        if argv[1] == 'transform':
+            transform()
+        exit(0)
+    except Exception as e:
+        print(e)
+        exit(1)
